@@ -1,0 +1,126 @@
+/* Resetando as config. padrões */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-weight: 400;
+
+    font-family: 'Poppins', sans-serif; /* Definindo a Fonte de Texto do Projeto*/
+}
+
+/* Definindo "variaveis" de cor para o nosso projeto*/
+:root {
+    --purple-200: #9a7bd1;
+    --purple-500: #6b36c8;
+    --purple-800: #441f88;
+
+    --black-800: #171717;
+
+    --gray-200: #141212;
+    --gray-400: #505861;
+
+    --white: #F9F9F9;
+}
+
+body {
+    background: var(--#F9F9F9);   /* Definindo o plano de fundo */
+    color: var(--black-800);            /* Definindo a cor da fonte */
+}
+.center {
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items:center;
+}
+
+#menu li{
+    display: inline;
+    padding: 30px;
+
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color: gray;
+}
+
+.p-30{
+    padding: 30px;
+}
+
+.br-50{
+    border-radius: 50%;
+}
+
+.wh{
+    width: 300px;
+    height: 300px;
+}
+
+/*
+p{
+    font-size: 20px;
+}
+#p-primeiro{
+    font-size: 24px;
+    font-weight: bold;
+}
+.p-color-red{
+    color: red;
+}
+
+img{
+    width: 500px;
+}
+
+.container{
+    display: flex;
+    align-items:center;
+
+    margin: 20px;
+
+    border: 5px red solid;
+
+    padding: 20px;
+
+}
+*/
+
+/* REDES SOCIAIS */
+.social_container {
+    display: flex;
+    justify-content: space-evenly;  /* os elementos terão um espaço entre eles, e entre as bordas do container */
+    margin: 32px 0 0 0;
+    width: 320px;
+}
+
+.social_icon {
+    width: 75px;
+    height: 75px;
+    filter: invert();   /* Invertemos a cor natural dos icones, de branco para preto */
+}
+
+.social_icon:hover {    /* ao passar o mouse, os ícones terão suas cores mudadas para roxo, fazemos dessa forma pois os icones são arquivos .SVG*/
+    filter: brightness(0) saturate(100%) invert(29%) sepia(31%) saturate(5190%) hue-rotate(249deg) brightness(79%) contrast(99%);
+}
+
+/* RODAPÉ */
+footer {
+    margin: 0;
+    padding: 32px;
+    color: var(--white);
+    background-color: var(--purple-500);
+    filter: opacity(0.9);
+    font-weight: bold;
+}
